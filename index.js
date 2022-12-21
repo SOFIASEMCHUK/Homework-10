@@ -21,20 +21,20 @@ for(let i = 10; i <= 100; i++) {
 console.log(dollar);
 
 // //3
-// let randomNum = +prompt('enter num N')
-// let result2 = '';
+let randomNum = +prompt('enter num N for task 3')
+let result2 = '';
 
-// for(let i = 1; i <= 100; i++) {
-//     if (Math.pow(i, 2) <= randomNum) {
-//         result2 += i + ' ';
-//     }
-// }
-// console.log(result2);
+for(let i = 1; i <= 100; i++) {
+    if (Math.pow(i, 2) <= randomNum) {
+        result2 += i + ' ';
+    }
+}
+console.log(result2);
 
 //4 Дане ціле число. З'ясувати, чи є воно простим 
 //(простим називається число, більше 1, які не мають інших дільників крім 1 і себе).
 
-let simple = +prompt('Enter simple number');
+let simple = +prompt('Enter simple number for task 4');
 
 if(simple%2 !== 0 && simple%3 !== 0 || simple === 2 || simple === 3) {
     console.log(`${simple} - просте число!`);
