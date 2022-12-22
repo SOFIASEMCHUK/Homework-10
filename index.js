@@ -5,6 +5,7 @@
 //5 Дане деяке число. Визначити, чи можна одержати це число шляхом зведення числа 3 у деякий ступінь. (Наприклад, числа 9, 81 можна отримати, а 13 - не можна).
 
 //1
+console.log('Завдання 1');
 let result = '';
 
 for(let i = 20; i <= 30; i+=0.5) {
@@ -13,6 +14,7 @@ for(let i = 20; i <= 30; i+=0.5) {
 console.log(result);
 
 //2
+console.log('Завдання 2');
 let dollar = '';
 
 for(let i = 10; i <= 100; i++) {
@@ -20,7 +22,8 @@ for(let i = 10; i <= 100; i++) {
 }
 console.log(dollar);
 
-// //3
+//3
+console.log('Завдання 3');
 let randomNum = +prompt('enter num N for task 3')
 let result2 = '';
 
@@ -33,11 +36,40 @@ console.log(result2);
 
 //4 Дане ціле число. З'ясувати, чи є воно простим 
 //(простим називається число, більше 1, які не мають інших дільників крім 1 і себе).
+console.log('Завдання 4');
 
 let simple = +prompt('Enter simple number for task 4');
-
-if(simple%2 !== 0 && simple%3 !== 0 || simple === 2 || simple === 3) {
+let count = 0;
+for(let i = 1; i <= simple; i++){
+    if(simple%i === 0) {
+        count++;
+    }
+}
+if(count > 2) {
+    console.log('Це число не просте. Спробуй ще');
+}else{
     console.log(`${simple} - просте число!`);
-} else {
-    console.log('Це число не просте. Спробуй ще!');
+}
+
+// if(simple%2 !== 0 && simple%3 !== 0 || simple === 2 || simple === 3) {
+//     console.log(`${simple} - просте число!`);
+// } else {
+//     console.log('Це число не просте. Спробуй ще!');
+// }
+
+//5
+// Дане деяке число. Визначити, чи можна одержати це число шляхом зведення числа 
+// 3 у деякий ступінь. (Наприклад, числа 9, 81 можна отримати, а 13 - не можна).
+console.log('Завдання 5');
+
+let randomNum1 = +prompt('Enter number for task 5');
+
+for(let i = 1; i <= randomNum; i++){
+    if(randomNum1%3 === 0) {
+        randomNum1 = randomNum1/3;
+        if(randomNum1 === 1){
+            console.log(`Вірно, число ${randomNum1} підходить`);}
+    }else{
+        console.log('Спробуй ще');
+    }
 }
