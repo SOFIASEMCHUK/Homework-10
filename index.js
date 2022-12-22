@@ -34,10 +34,8 @@ for(let i = 1; i <= 100; i++) {
 }
 console.log(result2);
 
-//4 Дане ціле число. З'ясувати, чи є воно простим 
-//(простим називається число, більше 1, які не мають інших дільників крім 1 і себе).
+//4 
 console.log('Завдання 4');
-
 let simple = +prompt('Enter simple number for task 4');
 let count = 0;
 for(let i = 1; i <= simple; i++){
@@ -57,19 +55,16 @@ if(count > 2) {
 //     console.log('Це число не просте. Спробуй ще!');
 // }
 
+
 //5
-// Дане деяке число. Визначити, чи можна одержати це число шляхом зведення числа 
-// 3 у деякий ступінь. (Наприклад, числа 9, 81 можна отримати, а 13 - не можна).
 console.log('Завдання 5');
 
 let randomNum1 = +prompt('Enter number for task 5');
 
-for(let i = 1; i <= randomNum; i++){
-    if(randomNum1%3 === 0) {
-        randomNum1 = randomNum1/3;
-        if(randomNum1 === 1){
-            console.log(`Вірно, число ${randomNum1} підходить`);}
+for(let i = 1; i <= randomNum1; i++) {
+    if(Math.pow(3, i) === randomNum1) {
+        console.log(`${randomNum1} - підходить умові`);
     }else{
-        console.log('Спробуй ще');
+        console.log('Не підходить'); 
     }
 }
