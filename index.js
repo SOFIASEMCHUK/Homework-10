@@ -63,8 +63,11 @@ let randomNum1 = +prompt('Enter number for task 5');
 
 for(let i = 1; i <= randomNum1; i++) {
     if(Math.pow(3, i) === randomNum1) {
-        console.log(`${randomNum1} - підходить умові`);
+        console.log(`${randomNum1} - підходить умові`)
+        break;
     }else{
+        if(i === randomNum1)
         console.log('Не підходить'); 
+        
     }
 }
