@@ -8,7 +8,7 @@
 console.log('Завдання 1');
 let result = '';
 
-for(let i = 20; i <= 30; i+=0.5) {
+for (let i = 20; i <= 30; i+=0.5) {
     result += i + ' ';
 }
 console.log(result);
@@ -17,7 +17,7 @@ console.log(result);
 console.log('Завдання 2');
 let dollar = '';
 
-for(let i = 10; i <= 100; i++) {
+for (let i = 10; i <= 100; i = i + 10) {
     dollar += i + '$' + '=' + i * 27 + ' ';
 }
 console.log(dollar);
@@ -27,7 +27,7 @@ console.log('Завдання 3');
 let randomNum = +prompt('enter num N for task 3')
 let result2 = '';
 
-for(let i = 1; i <= 100; i++) {
+for (let i = 1; i <= 100; i++) {
     if (Math.pow(i, 2) <= randomNum) {
         result2 += i + ' ';
     }
@@ -38,35 +38,28 @@ console.log(result2);
 console.log('Завдання 4');
 let simple = +prompt('Enter simple number for task 4');
 let count = 0;
-for(let i = 1; i <= simple; i++){
-    if(simple%i === 0) {
+for (let i = 1; i <= simple; i++) {
+    if (simple%i === 0) {
         count++;
     }
 }
-if(count > 2) {
+if (count > 2) {
     console.log('Це число не просте. Спробуй ще');
-}else{
+} else {
     console.log(`${simple} - просте число!`);
 }
-
-// if(simple%2 !== 0 && simple%3 !== 0 || simple === 2 || simple === 3) {
-//     console.log(`${simple} - просте число!`);
-// } else {
-//     console.log('Це число не просте. Спробуй ще!');
-// }
-
 
 //5
 console.log('Завдання 5');
 
 let randomNum1 = +prompt('Enter number for task 5');
 
-for(let i = 1; i <= randomNum1; i++) {
-    if(Math.pow(3, i) === randomNum1) {
+for (let i = 1; i <= randomNum1; i++) {
+    if (Math.pow(3, i) === randomNum1) {
         console.log(`${randomNum1} - підходить умові`)
         break;
-    }else{
-        if(i === randomNum1)
+    } else {
+        if (i === randomNum1)
         console.log('Не підходить'); 
         
     }
